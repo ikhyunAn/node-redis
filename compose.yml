@@ -1,0 +1,9 @@
+# compose V2 ignores 'version' statement
+services:
+  redis-server:
+    image: 'redis'
+  node-app:
+    build: . # look into current directory to use Dockerfile
+    ports:
+      - "8081:8081"
+     
